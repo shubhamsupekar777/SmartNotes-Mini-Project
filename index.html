@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Notes App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1><img src="notes.png"> Smart Notes</h1>
+      <div class="actions">
+        <input type="text" id="searchBox" placeholder="Search notes...">
+        <button class="btn"><img src="edit.png"> New Note</button>
+        <button class="theme-toggle">🌙</button>
+      </div>
+    </header>
+
+    <div class="notes-container"></div>
+  </div>
+
+  <!-- ✨ Modal for Creating a New Note -->
+  <div class="modal hidden">
+    <div class="modal-content">
+      <h2>📝 Create a New Note</h2>
+      <input type="text" id="noteTitle" placeholder="Enter title..." />
+      <textarea id="noteText" placeholder="Write your note here..."></textarea>
+      <div class="modal-actions">
+        <button id="saveNote" class="save">Save</button>
+        <button id="cancelNote" class="cancel">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>Made with ❤️ by Shubham Supekar</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
